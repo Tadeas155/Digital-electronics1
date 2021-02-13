@@ -20,4 +20,4 @@ end architecture dataflow;
 | 1 | 1 | 0 |  |
 | 1 | 1 | 1 |  |
 
-![Screenshot od EDA Playground](Images/DemorganSim.png)
+![Screenshot od EDA Playground](Images/screenshot_eda.png)
