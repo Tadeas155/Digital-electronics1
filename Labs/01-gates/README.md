@@ -21,3 +21,5 @@ end architecture dataflow;
 | 1 | 1 | 1 | 0 |
 
 ![Simulace](Images/DemorganSim.PNG)
+
+https://www.edaplayground.com/x/iTzv
