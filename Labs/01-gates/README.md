@@ -20,4 +20,4 @@ end architecture dataflow;
 | 1 | 1 | 0 |  |
 | 1 | 1 | 1 |  |
 
-![Simulace](Images/DemorganSim.png)
+![Simulace](Images/DemorganSim.PNG)
