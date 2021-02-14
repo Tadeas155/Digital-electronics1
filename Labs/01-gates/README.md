@@ -43,4 +43,4 @@ end architecture dataflow;
 ```
 https://www.edaplayground.com/x/PPaT
 
-![Simulace](Images/second.PNG)
+![Simulace](Images/prubeh.PNG)
