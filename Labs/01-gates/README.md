@@ -24,20 +24,6 @@ end architecture dataflow;
 
 https://www.edaplayground.com/x/iTzv
 
-# 1)
-
-```vhdl
-architecture dataflow of gates is
-begin
-    f_o    <= (x_i or (not x_i));
-    fand_o <= (x_i and (not x_i));
-
-end architecture dataflow;
-```
-![Simulace](Images/second.PNG)
-
-https://www.edaplayground.com/x/PPaT
-
 # 1,2)
 
 ```vhdl
@@ -55,3 +41,5 @@ begin
 
 end architecture dataflow;
 ```
+https://www.edaplayground.com/x/PPaT
+
