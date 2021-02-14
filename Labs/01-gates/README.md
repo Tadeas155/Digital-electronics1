@@ -33,3 +33,5 @@ begin
 end architecture dataflow;
 ```
 ![Simulace](Images/second.PNG)
+
+https://www.edaplayground.com/x/PPaT
