@@ -31,5 +31,5 @@ begin
     fand_o <= (x_i and (not x_i));
 
 end architecture dataflow;
-
+```
 ![Simulace](Images/second.PNG)
