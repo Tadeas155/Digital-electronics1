@@ -24,7 +24,7 @@ end architecture dataflow;
 
 https://www.edaplayground.com/x/iTzv
 
-# 1
+# 1)
 
 ```vhdl
 architecture dataflow of gates is
@@ -37,3 +37,5 @@ end architecture dataflow;
 ![Simulace](Images/second.PNG)
 
 https://www.edaplayground.com/x/PPaT
+
+# 2)
