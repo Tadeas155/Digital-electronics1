@@ -18,3 +18,9 @@ Ukol 1:
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+Ukol 2:
+
+![Karnaugh map for "equals" function](Images/kmap_equals.png)
+![Karnaugh map for "equals" function](Images/kmap_greater.png)
+![Karnaugh map for "equals" function](Images/kmap_less.png)
