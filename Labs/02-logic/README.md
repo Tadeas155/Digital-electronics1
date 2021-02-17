@@ -1,46 +1,18 @@
-# Digital-electronics1
-
-```vhdl
-architecture dataflow of gates is
-begin
-    f_o  <= ((not_b_i) and a_i) or ((not c_i) and (not b_i));
-    fand_o <= a_i and b_i;
-    fxor_o <= a_i xor b_i;
-
-end architecture dataflow;
-```
-| **c** | **b** |**a** | **f(c,b,a)** |
-| :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 1 |
-| 0 | 0 | 1 | 1 |
-| 0 | 1 | 0 | 0 |
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 0 |
-| 1 | 0 | 1 | 1 |
-| 1 | 1 | 0 | 0 |
-| 1 | 1 | 1 | 0 |
-
-![Simulace](Images/DemorganSim.PNG)
-
-https://www.edaplayground.com/x/iTzv
-
-# 1,2)
-
-```vhdl
-architecture dataflow of gates is
-begin
-
-    fbool1_o <= x_i and (not x_i);
-    fbool2_o <= x_i or (not x_i);
-    fbool3_o <= x_i or x_i or x_i;
-    fbool4_o <= x_i and x_i and x_i;
-    fdist1_o <= (x_i and y_i) or (x_i and z_i);
-    fdist2_o <= x_i and (y_i or z_i);
-    fdist3_o <= (x_i or y_i) and (x_i or z_i);
-    fdist4_o <= x_i or (y_i and z_i);
-
-end architecture dataflow;
-```
-https://www.edaplayground.com/x/PPaT
-
-![Simulace](Images/prubeh.PNG)
+| **n** | **b** |**a** | **B > A** |**B = A** | **B < A** |
+| :-: | :b1: | :b2: | :a1: | :a0: | :a0: |
+| 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 0 | 0 | 0 | 1 | 0 | 0 | 0 | 1 |
+| 2 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 3 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 4 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 5 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 6 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 7 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 8 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 9 | 1 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 10 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 11 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 12 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 13 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 14 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 15 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
