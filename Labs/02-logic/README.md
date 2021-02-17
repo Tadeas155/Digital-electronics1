@@ -24,4 +24,4 @@ Ukol 2:
 ![Karnaugh map for "equals" function](Images/kmap_equals.png)
 ![Karnaugh map for "equals" function](Images/kmap_greater.png)
 ![Karnaugh map for "equals" function](Images/kmap_less.png)
-![Karnaugh map for "equals" function](Images/ukolis.jpg)
+![Karnaugh map for "equals" function](Images/ukolis.png)
