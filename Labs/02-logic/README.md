@@ -25,6 +25,6 @@ Ukol 2:
 ![Karnaugh map for "equals" function](Images/kmap_greater.png)
 ![Karnaugh map for "equals" function](Images/kmap_less.png)
 
-![Karnaugh map for "equals" function](Images/ukolis.png)
+![Karnaugh map for "equals" function](Images/ukolis.PNG)
 
 https://www.edaplayground.com/x/SqN7
