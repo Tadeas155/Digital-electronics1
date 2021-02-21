@@ -30,7 +30,7 @@ Ukol 2:
 https://www.edaplayground.com/x/SqN7
 
 Ukol 3:
-
+```vhdl
 architecture Behavioral of comparator_4bit is
 begin
     B_less_A_o    <= '1' when (b_i < a_i) else '0';
@@ -40,3 +40,4 @@ begin
 
 
 end architecture Behavioral;
+```
