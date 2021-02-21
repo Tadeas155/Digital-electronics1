@@ -28,3 +28,15 @@ Ukol 2:
 ![function](Images/ukolis.png)
 
 https://www.edaplayground.com/x/SqN7
+
+Ukol 3:
+
+architecture Behavioral of comparator_4bit is
+begin
+    B_less_A_o    <= '1' when (b_i < a_i) else '0';
+	B_equals_A_o  <= '1' when (b_i = a_i) else '0';
+	B_greater_A_o <= '1' when (b_i > a_i) else '0';
+    -- WRITE "GREATER" AND "EQUALS" ASSIGNMENTS HERE
+
+
+end architecture Behavioral;
