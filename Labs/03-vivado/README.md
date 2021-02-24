@@ -1,6 +1,6 @@
 Úkol 1:
 
-
+![function](Images/Ukol1.png)
 
 Úkol 2:
 ```vhdl
