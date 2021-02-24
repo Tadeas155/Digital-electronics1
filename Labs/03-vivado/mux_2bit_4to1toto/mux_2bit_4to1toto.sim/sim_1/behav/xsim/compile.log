@@ -1,0 +1,7 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/Git/Tadeas155/Digital-electronics1/Labs/03-vivado/mux_2bit_4to1toto/mux_2bit_4to1toto.srcs/sources_1/new/mux_2bit_4to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2bit_4to1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/Git/Tadeas155/Digital-electronics1/Labs/03-vivado/mux_2bit_4to1toto/mux_2bit_4to1toto.srcs/sim_1/new/tb_mux_2bit_4to1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2bit_4to1'
+WARNING: [VRFC 10-3607] overwriting existing primary unit 'mux_2bit_4to1' [D:/GitHub/Git/Tadeas155/Digital-electronics1/Labs/03-vivado/mux_2bit_4to1toto/mux_2bit_4to1toto.srcs/sim_1/new/tb_mux_2bit_4to1.vhd:18]
+ERROR: [VRFC 10-4982] syntax error near 'begin' [D:/GitHub/Git/Tadeas155/Digital-electronics1/Labs/03-vivado/mux_2bit_4to1toto/mux_2bit_4to1toto.srcs/sim_1/new/tb_mux_2bit_4to1.vhd:35]
+INFO: [VRFC 10-3070] VHDL file 'D:/GitHub/Git/Tadeas155/Digital-electronics1/Labs/03-vivado/mux_2bit_4to1toto/mux_2bit_4to1toto.srcs/sim_1/new/tb_mux_2bit_4to1.vhd' ignored due to errors
