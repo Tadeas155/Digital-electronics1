@@ -1,8 +1,8 @@
-## Úkol 1:
+# Úkol 1:
 
 ![function](Images/ukol1.PNG)
 
-## Úkol 2:
+# Úkol 2:
 ```vhdl
 architecture Behavioral of mux_2bit_4to1 is
 begin
@@ -56,9 +56,9 @@ p_stimulus : process
     end process p_stimulus;
 ```
 
-## Úkol 3:
+# Úkol 3:
 
-# Creating project
+### Creating project
        File - Project - New project
        Name your project and locate it
        RTL Project
@@ -66,20 +66,20 @@ p_stimulus : process
        Default part
        For example Nexys A7-50T (Best choice for this HW)
        Finish
- # Adding source 
+ ### Adding source 
        File - Add sources
        Find existing design source or create a new one
        Add, create file
        File type VHDL
        Finish
- # Adding testbench
+ ### Adding testbench
        Same principle but add/create simulation sources
- # Adding XDC constraints 
+ ### Adding XDC constraints 
        File - Add sources
        Add/create constraints
        Add/create file
        File type XDC
        Finish
- # Simulation
+ ### Simulation
        Flow - Run Simulation - Run behavioral simulation
        
