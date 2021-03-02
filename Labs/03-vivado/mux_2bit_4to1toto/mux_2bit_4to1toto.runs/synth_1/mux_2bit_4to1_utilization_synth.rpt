@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Feb 24 16:16:44 2021
+| Date         : Sun Feb 28 12:53:13 2021
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mux_2bit_4to1_utilization_synth.rpt -pb mux_2bit_4to1_utilization_synth.pb
 | Design       : mux_2bit_4to1

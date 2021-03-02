@@ -15,14 +15,14 @@ use ieee.std_logic_1164.all;
 ------------------------------------------------------------------------
 -- Entity declaration for testbench
 ------------------------------------------------------------------------
-entity tb_mux_2bit_4to1 is
+entity mux_2bit_4to1 is
     -- Entity of testbench is always empty
-end entity tb_mux_2bit_4to1;
+end entity mux_2bit_4to1;
 
 ------------------------------------------------------------------------
 -- Architecture body for testbench
 ------------------------------------------------------------------------
-architecture testbench of tb_mux_2bit_4to1 is
+architecture testbench of mux_2bit_4to1 is
 
     -- Local signals
     signal s_a       : std_logic_vector(2 - 1 downto 0);
@@ -53,24 +53,35 @@ begin
     begin
         -- Report a note at the begining of stimulus process
         report "Stimulus process started" severity note;
-         s_a   <= "00"; s_b <= "00"; s_c <= "00"; s_d <= "00";
-         s_sel <= "00"; wait for 10 ns;
+         s_a   <= "11"; s_b <= "00"; s_c <= "00"; s_d <= "00";
+         s_sel <= "00"; wait for 100 ns;
          
-         s_a   <= "01";  wait for 10 ns;
-         s_b   <= "01"; wait for 10 ns;
+         s_a   <= "00"; s_b <= "10"; s_c <= "00"; s_d <= "00";
+         s_sel <= "01"; wait for 100 ns;
          
-         s_sel <= "01"; wait for 10 ns;
-         s_c   <= "00";  wait for 10 ns;
-         s_d   <= "11"; wait for 10 ns;
+         s_a   <= "00"; s_b <= "00"; s_c <= "01"; s_d <= "00";
+         s_sel <= "10"; wait for 100 ns;
          
-         s_a   <= "00"; s_b <= "01"; s_c <= "11"; s_d <= "10";
-         s_sel <= "10"; wait for 10 ns;
+         s_a   <= "00"; s_b <= "00"; s_c <= "00"; s_d <= "11";
+         s_sel <= "11"; wait for 100 ns;
          
-         s_a   <= "01"; s_b <= "00"; s_c <= "00"; s_d <= "00";
-         s_sel <= "10"; wait for 10 ns;
+         s_a   <= "11"; s_b <= "10"; s_c <= "01"; s_d <= "00";
+         s_sel <= "10"; wait for 100 ns;
          
-         s_a   <= "00"; s_b <= "01"; s_c <= "11"; s_d <= "10";
-         s_sel <= "11"; wait for 10 ns;
+         s_a   <= "11"; s_b <= "10"; s_c <= "01"; s_d <= "00";
+         s_sel <= "11"; wait for 100 ns;
+         
+         s_a   <= "11"; s_b <= "10"; s_c <= "01"; s_d <= "00";
+         s_sel <= "00"; wait for 100 ns;
+         
+         s_a   <= "11"; s_b <= "10"; s_c <= "01"; s_d <= "00";
+         s_sel <= "01"; wait for 100 ns;
+         
+         s_a   <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
+         s_sel <= "00"; wait for 100 ns;
+         
+         s_a   <= "00"; s_b <= "01"; s_c <= "10"; s_d <= "11";
+         s_sel <= "11"; wait for 100 ns;
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
