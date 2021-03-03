@@ -1,8 +1,8 @@
    # Lab 4: Binary adder
 
-## 1 Preparation tasks (done before the lab at home)
+## 1 Preparation tasks 
 
-1. A half adder has two inputs A and B and two outputs Carry and Sum. Complete the half adder truth table. Draw a logic diagram of both output functions.
+1. A half adder 
 
     | **B** | **A** | **Carry** | **Sum** |
     | :-: | :-: | :-: | :-: |
@@ -11,7 +11,7 @@
     | 1 | 0 |  |  |
     | 1 | 1 |  |  |
 
-2. A full adder has three inputs and two outputs. The two inputs are A, B, and Carry input. The outputs are Carry output and Sum. Complete the full adder truth table and draw a logic diagram of both output functions.
+2. A full adder
 
     | **Cin** | **B** | **A** | **Cout** | **Sum** |
     | :-: | :-: | :-: | :-: | :-: |
