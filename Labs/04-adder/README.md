@@ -20,11 +20,11 @@
 | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 ```vhdl
-architecture Behavioral of hex_7seg is
+architecture Behavioral of segment2 is
 
 begin
 
-    p_7seg_decoder : process(hex_i)
+    segment2 : process(hex_i)
     begin
         case hex_i is
             when "0000" =>
@@ -60,16 +60,15 @@ begin
             when others =>
                 seg_o <= "0111000";     -- F
         end case;
-    end process p_7seg_decoder;
+    end process segment2;
 
 end Behavioral;
 ```
 ```vhdl
-p_stimulus : process
+ p_stimulus : process
     begin
         -- Report a note at the begining of stimulus process
         report "Stimulus process started" severity note;
-
         s_hex <= "0000"; wait for 100 ns;       -- 0
         
         s_hex <= "0001"; wait for 100 ns;       -- 1
@@ -101,9 +100,11 @@ p_stimulus : process
         s_hex <= "1110"; wait for 100 ns;       -- E
         
         s_hex <= "1111"; wait for 100 ns;       -- F
-           
+
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
+
+end architecture testbench;
 ```
