@@ -10,6 +10,7 @@
    | 500&nbsp;ms | 50 000 000 | `x"2FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
    | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
    
+### Listing of VHDL code of the process p_cnt_up_down with syntax highlighting.
 ```vhdl
     p_cnt_up_down : process(clk)
     begin
@@ -30,7 +31,8 @@
         end if;
     end process p_cnt_up_down;
 ```
-   
+
+### Listing of VHDL reset and stimulus processes from testbench file tb_cnt_up_down.vhd with syntax highlighting
 ```vhdl
     p_stimulus : process
     begin
@@ -54,7 +56,8 @@
 
 end architecture testbench;
 ```
-   
+
+###  Listing of VHDL code from source file top.vhd with all instantiations for the 4-bit bidirectional counter
 ```vhdl
    library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
