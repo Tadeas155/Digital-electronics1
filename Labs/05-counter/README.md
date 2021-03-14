@@ -11,6 +11,33 @@
    | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
    
    ```vhdl
+   ```
+   
+    ```vhdl
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        -- Enable counting
+        s_en     <= '1';
+        
+        -- Change counter direction
+        s_cnt_up <= '1';
+        wait for 380 ns;
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        -- Disable counting
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+
+end architecture testbench;
+     ```
+   
+   ```vhdl
    library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
