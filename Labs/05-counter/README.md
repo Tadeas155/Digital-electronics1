@@ -10,10 +10,10 @@
    | 500&nbsp;ms | 50 000 000 | `x"2FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
    | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
    
-   ```vhdl
-   ```
+```vhdl
+```
    
-    ```vhdl
+```vhdl
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
@@ -35,9 +35,9 @@
     end process p_stimulus;
 
 end architecture testbench;
-     ```
+```
    
-   ```vhdl
+```vhdl
    library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -132,4 +132,4 @@ begin
     AN <= b"1111_1110";
 
 end architecture Behavioral;
-   ```
+```
