@@ -155,4 +155,13 @@ begin
 
 end architecture Behavioral;
 ```
+### Figure or table with connection of push buttons on Nexys A7 board
+| **Component** | **PIN** |
+| :-: | :-: |
+| BTNL | P17 |
+| BTNR | M17 |
+| BTNU | M18 |
+| BTND | P18 |
+| BTNC | N17 |
+
 ![TOP](Images/kekw.jpg)
