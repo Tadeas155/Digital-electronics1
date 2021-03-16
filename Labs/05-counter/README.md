@@ -56,6 +56,7 @@
 
 end architecture testbench;
 ```
+![SIMULACE](Images/sim.PNG)
 
 ###  Listing of VHDL code from source file top.vhd with all instantiations for the 4-bit bidirectional counter
 ```vhdl
