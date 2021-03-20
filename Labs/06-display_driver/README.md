@@ -191,3 +191,4 @@ end architecture Behavioral;
 ```
 
 ### Image of the driver schematic.
+![schematic](Images/schematic.PNG)
