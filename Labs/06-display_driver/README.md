@@ -51,40 +51,39 @@ architecture testbench of tb_driver_7seg_4digits is
     constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
 
     --Local signals
-    signal s_clk_100MHz : std_logic;
-     --signal clk     :   std_logic;
-     signal s_reset   :   std_logic;
-
-     signal s_data0 :   std_logic_vector(4 - 1 downto 0);
-     signal s_data1 :   std_logic_vector(4 - 1 downto 0);
-     signal s_data2 :   std_logic_vector(4 - 1 downto 0);
-     signal s_data3 :   std_logic_vector(4 - 1 downto 0);
-     signal s_dp_i    :   std_logic_vector(4 - 1 downto 0);
-
-     signal s_dp_o    :   std_logic;
-        
-     signal s_seg   :   std_logic_vector(7 - 1 downto 0);
-     signal s_dig   :   std_logic_vector(4 - 1 downto 0);
+    signal s_clk_100MHz :   std_logic;
+    signal s_reset      :   std_logic;
+    
+    signal s_data0_i    :   std_logic_vector(4 - 1 downto 0);
+    signal s_data1_i    :   std_logic_vector(4 - 1 downto 0);
+    signal s_data2_i    :   std_logic_vector(4 - 1 downto 0);
+    signal s_data3_i    :   std_logic_vector(4 - 1 downto 0);
+    
+    signal s_dp_i       :   std_logic_vector(4 - 1 downto 0);
+    signal s_dp_o       :   std_logic;
+    signal s_seg_o      :   std_logic_vector(7 - 1 downto 0);
+    signal s_dig_o      :   std_logic_vector(4 - 1 downto 0);
+    
 begin
     -- Connecting testbench signals with driver_7seg_4digits entity
     -- (Unit Under Test)
-    uut_driver_7seg : entity work.driver_7seg_4digits
+    --- WRITE YOUR CODE HERE
+    uut_driver_7seg : entity work.driver_7seg_4digits 
     port map(
-        clk     =>  s_clk_100MHz,
-        reset   =>  s_reset,
-        
-        data0_i =>  s_data0,
-        data1_i =>  s_data1,
-        data2_i =>  s_data2,
-        data3_i =>  s_data3,
-        
-        dp_i    =>  s_dp_i,
-        
-        dp_o    =>  s_dp_o,
-        seg_o   =>  s_seg,
-        dig_o   =>  s_dig
+    clk      => s_clk_100MHz,
+    reset    => s_reset,
+    
+    data0_i  => s_data0_i,
+    data1_i  => s_data1_i,
+    data2_i  => s_data2_i,
+    data3_i  => s_data3_i,
+    
+    dp_i     => s_dp_i,
+    dp_o     => s_dp_o,
+    seg_o    => s_seg_o,
+    dig_o    => s_dig_o
+    
     );
-
     --------------------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------------------
@@ -102,18 +101,16 @@ begin
     --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
-    p_reset_gen :   process
-    begin
-        s_reset <=  '0';
+       p_reset_gen : process
+        begin
+        s_reset <= '0';
         wait for 10 ns;
         
         -- Reset activated
-        s_reset <=  '1';
+        s_reset <= '1';
         wait for 25 ns;
-        
-        -- Reset deactivated
-        s_reset <=  '0';
-        
+
+        s_reset <= '0';
         wait;
     end process p_reset_gen;
 
@@ -124,11 +121,11 @@ begin
     begin
         report "Stimulus process started" severity note;
         
-        s_data3   <=  "0011";
-        s_data2   <=  "0001";
-        s_data1   <=  "0100";
-        s_data0   <=  "0010";
-        s_dp_i    <=  "0111";
+        s_data3_i  <= "0011";
+        s_data2_i  <= "0001";
+        s_data1_i  <= "0100";
+        s_data0_i  <= "0010";
+        s_dp_i     <= "0111";
 
         report "Stimulus process finished" severity note;
         wait;
