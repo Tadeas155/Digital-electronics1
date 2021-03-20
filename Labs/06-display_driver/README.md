@@ -135,7 +135,7 @@ end architecture testbench;
 ```
 
 ### Screenshot with simulated time waveforms.
-
+![simulation](Images/prubeh.PNG)
 
 ### Listing of VHDL architecture of the top layer.
 ```vhdl
