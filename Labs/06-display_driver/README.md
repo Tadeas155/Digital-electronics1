@@ -1,6 +1,6 @@
 # 06-display_driver
 
-![diagram](Images/diagram.PNG)
+![diagram](Images/diagram.png)
 
 ### Listing of VHDL code of the process p_mux with syntax highlighting.
 ```vhdl
