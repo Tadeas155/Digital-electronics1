@@ -143,6 +143,9 @@ p_traffic_fsm : process(clk)
         end case;
     end process p_output_fsm;
 ```
+### Screenshot(s) of the simulation
+![sim](Images/simulation.PNG)
+
 ## Smart controller
 
 ### State table
