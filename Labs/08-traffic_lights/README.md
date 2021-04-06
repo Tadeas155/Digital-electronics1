@@ -143,3 +143,16 @@ p_traffic_fsm : process(clk)
         end case;
     end process p_output_fsm;
 ```
+## Smart controller
+
+### State table
+| **Current state** | **Direction South** | **Direction West** | **Delay** | Sensors combination |
+| :-- | :-: | :-: | :-: | :-: |
+| `STOP1`      | red    | red | 1 sec |  |
+| `WEST_GO`    | red    | green | 4 sec | south = 0 and west = 1 |
+| `WEST_WAIT`  | red    | yellow | 2 sec |  |
+| `STOP2`      | red    | red | 1 sec |  |
+| `SOUTH_GO`   | green  | red | 4 sec | south = 1 and west = 0 |
+| `SOUTH_WAIT` | yellow | red | 2 sec |  |
+
+### State diagram
