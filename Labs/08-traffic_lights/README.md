@@ -156,3 +156,4 @@ p_traffic_fsm : process(clk)
 | SOUTH_WAIT | yellow | red | 2 sec |  |
 
 ### State diagram
+![traffic](Images/diagram2.png)
