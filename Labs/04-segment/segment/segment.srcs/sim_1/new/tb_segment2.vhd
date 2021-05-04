@@ -67,9 +67,9 @@ begin
         
         s_hex <= "1001"; wait for 100 ns;       -- 9
         
-        s_hex <= "1010"; wait for 100 ns;       -- A
+        s_hex <= "1010"; wait for 100 ns;       -- -
         
-        s_hex <= "1011"; wait for 100 ns;       -- B
+        s_hex <= "1011"; wait for 100 ns;       -- 
         
         s_hex <= "1100"; wait for 100 ns;       -- C
         
